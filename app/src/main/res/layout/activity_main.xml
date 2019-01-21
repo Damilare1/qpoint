@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+
+    android:background="#FFFBFDFF">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/app_bar"></include>
+
+    <TextView
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Bjt"
+        android:id="@+id/BJT"
+
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BJT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="@string/FB1"
+        android:id="@+id/FIXEDBIASBUTTON" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/EB"
+        android:id="@+id/EmitterBiasButton"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/FIXEDBIASBUTTON"
+
+        android:layout_alignRight="@+id/FIXEDBIASBUTTON"
+        android:layout_alignEnd="@+id/FIXEDBIASBUTTON"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/VD"
+        android:id="@+id/VOLTAGEDIVIDERBIAS"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/EmitterBiasButton"
+        android:layout_alignLeft="@+id/EmitterBiasButton"
+        android:layout_alignStart="@+id/EmitterBiasButton"
+        android:layout_alignRight="@+id/EmitterBiasButton"
+        android:layout_alignEnd="@+id/EmitterBiasButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CF"
+        android:id="@+id/COLLECTORFEEDBACK"
+        android:layout_below="@+id/VOLTAGEDIVIDERBIAS"
+        android:layout_alignLeft="@+id/VOLTAGEDIVIDERBIAS"
+        android:layout_alignStart="@+id/VOLTAGEDIVIDERBIAS"
+        android:layout_marginTop="47dp"
+        android:layout_alignRight="@+id/VOLTAGEDIVIDERBIAS"
+        android:layout_alignEnd="@+id/VOLTAGEDIVIDERBIAS" />
+
+
+</RelativeLayout>

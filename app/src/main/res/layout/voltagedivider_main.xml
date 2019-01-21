@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffbfdff"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical"
+    tools:context=".Voltagedivider_main">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/app_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/VD"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/FBtext"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/VDRc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ems="10"
+                android:hint="@string/Rchint"
+                android:inputType="numberDecimal"
+                android:numeric="decimal"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/VDRe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:hint="@string/Rehint"
+                android:inputType="number|numberDecimal"
+                android:numeric="decimal"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/VDr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50"
+                android:hint="@string/R1hint"
+                android:inputType="number|numberDecimal"
+                android:numeric="decimal"
+                android:textStyle="italic" />
+
+
+            <EditText
+                android:id="@+id/VDr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50"
+                android:hint="@string/R2hint"
+                android:inputType="number|numberDecimal"
+                android:numeric="decimal"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/VDVcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50"
+                android:hint="@string/Vcchint"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:numeric="decimal"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/VDbeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="50"
+                android:hint="@string/beta"
+                android:inputType="number|numberDecimal"
+                android:numeric="decimal"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/VoltageCalc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="VoltageBias"
+                android:text="Calculate" />
+
+            <Button
+                android:id="@+id/bClr"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:onClick="onButtonClick2"
+                android:text="Clear" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/vceVD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" " />
+
+
+            <TextView
+                android:id="@+id/collectorcurrentVD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" " />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/collectorcurrentVD2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" " />
+
+            <TextView
+
+                android:id="@+id/vceVD2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" " />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

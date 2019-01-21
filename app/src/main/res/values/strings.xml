@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Q - Point</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Bjt">Bipolar Junction Transistors</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_details">App Info</string>
+    <string name="FB1">Fixed Bias</string>
+    <string name="EB">Emitter Bias</string>
+    <string name="VD">Voltage Divider</string>
+    <string name="CF">Collector Feedback</string>
+    <string name="FBtext">Enter values for bias components.</string>
+    <string name="Result">RESULT</string>
+    <string name="Ic">Collector Current:         </string>
+    <string name="Vce1">Collector Emitter Voltage:</string>
+    <string name="sbeta">Beta Stability Factor</string>
+    <string name="Rchint">Enter Rc in kΩ</string>
+    <string name="Rehint">Enter Re in kΩ</string>
+    <string name="Rbhint">Enter Rb in kΩ</string>
+    <string name="R1hint">Enter R1 in kΩ</string>
+    <string name="R2hint">Enter R2 in kΩ</string>
+    <string name="Vcchint">Enter Vcc in V</string>
+    <string name="Vbbhint">Enter Vbb in V</string>
+    <string name="beta">Enter Value of β</string>
+    <string name="Space"> </string>
+    <string name="menu">menu </string>
+</resources>
